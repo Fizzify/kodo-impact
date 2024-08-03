@@ -1,5 +1,5 @@
 import Codespace from "@/game/components/codespace";
-import EngineManager from "@/game/components/engine.manager";
+import EngineManager from "@/game/components/engine-manager";
 import Button from "@/primitive/button";
 import { ClerkLoaded } from "@clerk/nextjs";
 
