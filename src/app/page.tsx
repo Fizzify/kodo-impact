@@ -1,7 +1,12 @@
+import Button from "@/primitive/button";
+
 const Home = () => {
   return (
-    <main className="font-zero">
-      <h1 className="text-8xl">Kodo Impact</h1>
+    <main>
+      <h1 className="text-8xl font-zero">Kodo Impact</h1>
+      <Button intent="primary" size="large">
+        Start Kickin&apos;!
+      </Button>
     </main>
   );
 };
