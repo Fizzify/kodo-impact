@@ -1,6 +1,7 @@
 import Codespace from "@/game/components/codespace";
-import Engine from "@/game/components/engine.manager";
+import EngineManager from "@/game/components/engine.manager";
 import Button from "@/primitive/button";
+import { ClerkLoaded } from "@clerk/nextjs";
 
 const Home = () => {
   return (
@@ -9,8 +10,10 @@ const Home = () => {
       <Button intent="primary" size="large">
         Start Kickin&apos;!
       </Button>
-      <Codespace />
-      <Engine />
+      <ClerkLoaded>
+        <Codespace />
+        <EngineManager />
+      </ClerkLoaded>
     </main>
   );
 };

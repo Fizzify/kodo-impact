@@ -1,20 +1,9 @@
 "use client";
 
-import { useEffect } from "react";
-
-import { Engine } from "excalibur";
+import { ExcaliburContainer } from "./excalibur-container";
 
 const EngineManager = () => {
-  useEffect(() => {
-    const game = new Engine({
-      width: 300,
-      height: 300,
-    });
-
-    game.start();
-  }, []);
-
-  return <div></div>;
+  return <ExcaliburContainer></ExcaliburContainer>;
 };
 
 export default EngineManager;
