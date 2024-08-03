@@ -1,3 +1,5 @@
+import Codespace from "@/game/components/codespace";
+import Engine from "@/game/components/engine.manager";
 import Button from "@/primitive/button";
 
 const Home = () => {
@@ -7,6 +9,8 @@ const Home = () => {
       <Button intent="primary" size="large">
         Start Kickin&apos;!
       </Button>
+      <Codespace />
+      <Engine />
     </main>
   );
 };
