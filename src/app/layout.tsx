@@ -6,7 +6,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Kodo Impact",
+  title: "Kodo Impact | Invest yourself into coding & gaming",
   description: "Invest yourself into coding & gaming.",
 };
 

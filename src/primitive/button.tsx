@@ -39,7 +39,7 @@ const buttonVariants = cva(["font-semibold"], {
   },
 });
 
-const Button = ({ intent, size, children, ...props }: ButtonProps) => {
+const PrimitiveButton = ({ intent, size, children, ...props }: ButtonProps) => {
   return (
     <button className={buttonVariants({ intent, size })} {...props}>
       {children}
@@ -47,4 +47,4 @@ const Button = ({ intent, size, children, ...props }: ButtonProps) => {
   );
 };
 
-export default Button;
+export default PrimitiveButton;

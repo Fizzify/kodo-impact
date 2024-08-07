@@ -16,6 +16,7 @@ const config: Config = {
       },
       fontFamily: {
         zero: ["Zero Velocity BRK", "serif"],
+        joystix: ["Joystix", "serif"],
       },
     },
   },

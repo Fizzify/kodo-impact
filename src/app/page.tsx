@@ -1,19 +1,16 @@
-import Codespace from "@/game/components/codespace";
-import EngineManager from "@/game/components/engine-manager";
-import Button from "@/primitive/button";
-import { ClerkLoaded } from "@clerk/nextjs";
+import { Button } from "nes-ui-react";
+import Link from "next/link";
 
 const Home = () => {
   return (
-    <main>
+    <main className="flex flex-col items-center justify-center h-full bg-black text-white">
       <h1 className="text-8xl font-zero">Kodo Impact</h1>
-      <Button intent="primary" size="large">
-        Start Kickin&apos;!
-      </Button>
-      <ClerkLoaded>
-        <Codespace />
-        <EngineManager />
-      </ClerkLoaded>
+      <p className="">Game like a coder</p>
+      <Link href="/game">
+        <Button className="font-bold font-joystix" color="primary">
+          Start Kickin&apos;
+        </Button>
+      </Link>
     </main>
   );
 };
