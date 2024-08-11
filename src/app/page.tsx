@@ -1,5 +1,6 @@
 import { Button } from "nes-ui-react";
 import Link from "next/link";
+import useSound from "use-sound";
 
 const Home = () => {
   return (
