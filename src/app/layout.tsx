@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
+import { ToastProvider } from "@/components/ToastProvider";
 
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
@@ -18,7 +19,10 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
-        <body className={spaceGrotesk.className}>{children}</body>
+        <body className={spaceGrotesk.className}>
+          {children}
+          <ToastProvider />
+        </body>
       </html>
     </ClerkProvider>
   );
